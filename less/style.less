@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'ProximaNovaRg';
+    src: url('ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.reg() {
+  font-family: 'ProximaNovaRg', sans-serif;
+  font-size: 1.8rem;
+}
+
+@font-face {
+    font-family: 'AvertaCY';
+    src: url('AvertaCY-Regular.woff2') format('woff2'),
+        url('AvertaCY-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.med() {
+  font-family: 'AvertaCY', sans-serif;
+  font-size: 1.8rem;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraBold.woff2') format('woff2'),
+        url('Montserrat-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+.bold() {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9.8rem;
+}
+
+/* Colors */
+@mmf-green: #54B686;
+@mmf-black: #434242;
+
+
+/* Basic settings */
+html {
+  font-size: 10px;
+}
+
+button, input, a, textarea {
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body, section {
+  .reg();
+}
+
+.button-1 {
+  .med();
+  padding: 0.5rem 3rem;
+  background-color: @mmf-green;
+  color: #ffffff;
+  border-radius: 1rem;
+  margin: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken(@mmf-green, 5%);
+    color: #ffffff;
+  }
+}
+
+/* Typography */
+h1 {
+  .bold();
+  display: block;
+}
+h2 {
+  .med();
+  font-size: 2.4rem;
+}
+
+.hat {
+  box-shadow: 0 2px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  margin-bottom: 8rem;
+
+  &-logo {
+    display: inline-block;
+    margin: 1rem 0;
+    width: 16rem;
+  }
+  &-link {
+    display: inline-block;
+    margin: 3rem 1rem 0;
+    color: black;
+    text-decoration: none;
+    
+    &-block {
+      text-align: center;
+    }
+  }
+  &-btn {
+    margin: 2.2rem 1rem 0;
+  }
+}
+
+.main {
+  &-logo {
+    display: inline-block;
+    width: 18rem;
+    margin-bottom: 2rem;
+  }
+  &-star {
+    display: inline-block;
+    width: 3rem;
+  }
+  & h4 {
+    display: inline-block;
+  }
+  &-header {
+    text-align: center;
+    &-block {
+      text-align: left;
+      display: inline-block;
+      margin-left: 2rem;
+    }
+  }
+  &-bg {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    margin: 2rem 0 2rem;
+  }
+}
+
+.idea {
+  &-wrap {
+    margin: 10rem 0;
+    height: 20rem;
+  }
+  &-block {
+    text-align: center;
+  }
+  &-btn {
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+.accordion {
+  &-button {
+    font-size: 1.8rem;
+    color: #ffffff;
+    background-color: @mmf-green;
+    margin-bottom: 0.2rem;
+
+    &:not(.collapsed) {
+      .med();
+      background-color: darken(@mmf-green, 7%);
+      color: #ffffff;
+      box-shadow: none;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    &:hover {
+      background-color: darken(@mmf-green, 5%);
+    }
+  }
+  &-body {
+    font-size: 1.6rem;
+    color: #ffffff;
+    background-color: @mmf-green;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.suitable {
+  &-header {
+    .med();
+    text-align: center;
+    font-size: 3rem;
+    margin: 4rem;
+  }
+  &-bg {
+    width: 100%;
+    height: 60rem;
+  }
+}
+
+.card {
+  &-header {
+    .med();
+    font-size: 3rem;
+    margin: 8rem 0 4rem;
+    text-align: center;
+  }
+  &-img-template {
+    width: 100%;
+    height: 60rem;
+  }
+  &-project {
+    margin-bottom: 10rem;
+  }
+}
+.forum {
+  &-main {
+    margin-top: 5rem;
+  }
+  &-fastMenuBar {
+    padding: 0 2rem;
+  }
+}
+
+.table {
+  &-forum {
+    margin-bottom: 8rem;
+  }
+  &-row {
+    color: #ffffff;
+    background-color: @mmf-green;
+    padding: 1rem;
+    margin-bottom: 0.4rem;
+    &:hover {
+      background-color: darken(@mmf-green, 5%);
+    }
+    &-first {
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+    }
+    &-last {
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      &-text {
+        margin: auto 0;
+      }
+    }
+  }
+  &-header-el {
+    &-2 {
+      text-align: center;
+    }
+    &-4 {
+      text-align: center;
+    }
+  }
+  &-el {
+    &-1 {
+      border-right: 2px solid #ffffff;
+      &-text {
+        margin: auto 0;
+      }
+    }
+    &-2 {
+      border-right: 1px solid #ffffff;
+      margin: auto 0;
+    }
+    &-3 {
+      border-left: 1px solid #ffffff;
+      margin: auto 0;
+    }
+    &-counter {
+      text-align: center;
+    }
+    &-4 {
+      border-left: 2px solid #ffffff;
+      &-text {
+        text-align: right;
+        margin: auto 0;
+      }
+    }
+  }
+  &-fastMenu {
+    &-row {
+      display: block;
+      img {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+      h3 {
+        display: inline-block;
+      }
+    }
+  }
+}
+.projects {
+  &-main {
+    margin-top: 8rem;
+  }
+  &-project {
+    &-text-black {
+      color: #000000;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    &-1col {
+      text-align: center;
+      margin-bottom: 1rem;
+      img {
+        margin: 1rem 0 2rem 0;
+      }
+    }
+    &-text {
+      line-height: 3rem;
+    }
+  }
+}
+.members {
+  &-filter {
+    display: inline-block;
+    height: 3rem;
+    margin: auto 0;
+  }
+  &-avatar {
+    margin: 1rem auto;
+    display: block;
+  }
+  &-header-1 {
+    display: inline-block;
+  }
+  &-nameSurname {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+}
+.sign-block {
+  text-align: center;
+  background-color: @mmf-green;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  color: #ffffff;
+  padding: 2rem 4rem;
+}
+.button-2 {
+  color: @mmf-green;
+  background-color: #fff;
+  margin: 3rem auto 1rem auto;
+  width: 50%;
+}
+.input {
+  &-1 {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  &-header {
+    margin-top: 1rem;
+  }
+}
+.sign-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+hr {
+  opacity: 1;
+}
